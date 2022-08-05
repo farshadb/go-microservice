@@ -14,7 +14,7 @@ RUN chmod +x /app/brokerApp
 
 # build a tiny docker image
 
-FROM Aipine:latest
+FROM alpine:latest
 
 RUN mkdir /app
 
