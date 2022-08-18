@@ -4,8 +4,7 @@ import (
 	"fmt"
 	"log"
 	"net/http"
-
-	"github.com/F4r5h4d/go-microservice/broker-service/cmd/api"
+	"microservice/broker-service/cmd/api/routes"
 )
 
 const webPort = "8000"
