@@ -10,5 +10,5 @@ services:
     ports:
       - "3000:8000"
     deploy:
-      mode: replecated
+      mode: replicated
       replicas: 1

@@ -9,14 +9,16 @@ import (
 type jsonResponse struct {
 	Error 	bool	`json:"error"`
 	Message string  `json:"message"`
-	Data    any 	`json:"data.omitempty"`
+	Data    any 	`json:"data,omitempty"`
 }
-func (app *Config) Broker(w http.ResponseWriter, r *http.Request) {
-
+func Broker(w http.ResponseWriter, r *http.Request) {
 	payload := jsonResponse{
-		Error: 	false,
-		Message: "Hit the Broker",
+		Error:   false,
+		Message: "Hit the broker",
 	}
+
+
+
 
 	// _, here ingors the error message and just returns the payload
 	out, _ := json.MarshalIndent(payload, "", "\t")
