@@ -2,9 +2,9 @@ package main
 
 import (
 	"net/http"
-
-	"github.com/go-chi/chi/V5"
-	"github.com/go-chi/chi/V5/middleware"
+	"github.com/F4r5h4d/go-microservice/broker-service/cmd/api"
+	"github.com/go-chi/chi"
+	"github.com/go-chi/chi/middleware"
 	"github.com/go-chi/cors"
 )
 

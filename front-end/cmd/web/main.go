@@ -1,5 +1,6 @@
 package main
 
+
 import (
 	"fmt"
 	"html/template"
@@ -25,6 +26,7 @@ func render(w http.ResponseWriter, t string) {
 		"./cmd/web/templates/base.layout.gohtml",
 		"./cmd/web/templates/header.partial.gohtml",
 		"./cmd/web/templates/footer.partial.gohtml",
+		"./cmd/web/templates/test.page.gohtml",
 	}
 
 	var templateSlice []string
