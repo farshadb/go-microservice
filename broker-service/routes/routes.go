@@ -1,4 +1,4 @@
-package main
+package routes
 
 import (
 	"net/http"
@@ -6,8 +6,6 @@ import (
 	"github.com/go-chi/chi"
 	"github.com/go-chi/chi/middleware"
 	"github.com/go-chi/cors"
-
-	"github.com/lordfarshad/go-microservice/broker-service/cmd/api"
 )
 
 func (app *Config) routes() http.Handler {
