@@ -2,10 +2,12 @@ package main
 
 import (
 	"net/http"
-	"github.com/F4r5h4d/go-microservice/broker-service/cmd/api"
+
 	"github.com/go-chi/chi"
 	"github.com/go-chi/chi/middleware"
 	"github.com/go-chi/cors"
+
+	"github.com/lordfarshad/go-microservice/broker-service/cmd/api"
 )
 
 func (app *Config) routes() http.Handler {
