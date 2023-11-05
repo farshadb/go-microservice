@@ -20,7 +20,7 @@ func main() {
 
 	srv := &http.Server{
 		Addr:    fmt.Sprintf(":%s", webPort),
-		Handler: app.Routes(),
+		Handler: app.routes(),
 	}
 
 	// start the server

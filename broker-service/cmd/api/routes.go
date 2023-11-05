@@ -10,7 +10,7 @@ import (
 
 type Config struct {}
 
-func (app *Config) Routes() http.Handler {
+func (app *Config) routes() http.Handler {
 	mux := chi.NewRouter()
 
 	// specify who is allowed to connect
