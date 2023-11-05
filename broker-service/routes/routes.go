@@ -3,10 +3,12 @@ package routes
 import (
 	"net/http"
 
-	"github.com/go-chi/chi"
 	"github.com/go-chi/chi/middleware"
+	"github.com/go-chi/chi/v5"
 	"github.com/go-chi/cors"
 )
+
+type Config struct {}
 
 func (app *Config) routes() http.Handler {
 	mux := chi.NewRouter()
