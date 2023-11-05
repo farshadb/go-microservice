@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"log"
 	"net/http"
+	"github.com/lordfarshad/go-microservice/broker-service/routes"
 )
 
 const webPort = "8000"
@@ -19,7 +20,7 @@ func main() {
 
 	srv := &http.Server{
 		Addr:    fmt.Sprintf(":%s", webPort),
-		Handler: app.routes(),
+		Handler: app.Routes(),
 	}
 
 	// start the server
